@@ -6,12 +6,8 @@
 
 using namespace sf;
 
-
-
-
 int main()
 {
-
 	const int WIDTH = 1280;
 	const int HEIGHT = 720;
 	sf::Time ellapsedTime;
@@ -71,8 +67,6 @@ int main()
 		}
 		window.draw(DrawnPoints);
 		window.display();
-		ellapsedTime = clock.restart();
-		std::cout << "Fps: " << std::to_string(1 / ellapsedTime.asSeconds()) << '\r';
+		std::cout << "Fps: " << std::to_string(1 / clock.restart().asSeconds()) << '\r';
 	}
-
 }
