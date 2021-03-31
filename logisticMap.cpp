@@ -46,8 +46,11 @@ int main()
 	printf("x0: %f\n", x0);
 	printf("Ignoring %f %% of transient points\n", (double)transient * 100.f);
 	printf("Plotting %i points\n", (int)points.size());
+	
 
 	RenderWindow window(VideoMode(WIDTH, HEIGHT), "Logistic Map");
+	VertexArray DrawnPoints(sf::Points, points.size());
+	int c = 0;
 	while (window.isOpen())
 	{
 		Event event;
