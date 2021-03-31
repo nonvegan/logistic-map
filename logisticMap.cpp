@@ -48,7 +48,7 @@ int main()
 	printf("r: [%f,%f]\n", R0, R);
 	printf("x0: %f\n", x0);
 	printf("Ignoring %f %% of point residue\n", (double)residue * 100.f);
-	printf("Plotting %i points\n", points.size());
+	printf("Plotting %i points\n", (int)points.size());
 
 	RenderWindow window(VideoMode(WIDTH, HEIGHT), "Logistic Map");
 	while (window.isOpen())
